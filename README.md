@@ -3,11 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen.svg)]()
 [![Release](https://img.shields.io/badge/Release-v1.0-orange.svg)](https://github.com/Bader287/netsuite/releases/tag/v1.0)
-[![Website](https://img.shields.io/badge/Live_Site-GitHub_Pages-blueviolet.svg)](https://bader287.github.io/netsuite/)
+[![Website](https://img.shields.io/badge/Live_Site-Vercel-black.svg)](https://netsuite-one.vercel.app)
 
 > **A dual-engine desktop utility suite engineered for users constrained by ISP Fair Usage Policies (FUP), bandwidth throttles, and single-network Wi-Fi limits.**
 
-🌐 **Live Download Website:** [https://bader287.github.io/netsuite/](https://bader287.github.io/netsuite/)
+🌐 **Live Download Website:** [https://netsuite-one.vercel.app](https://netsuite-one.vercel.app)
 
 ---
 
