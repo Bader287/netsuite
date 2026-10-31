@@ -1,64 +1,52 @@
-# ⚡ NetSuite: NetGuardian & NetFusion Studio
+# ⚡ NetFusion Max (v2.0 Unified Edition)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen.svg)]()
-[![Release](https://img.shields.io/badge/Release-v1.0-orange.svg)](https://github.com/Bader287/netsuite/releases/tag/v1.0)
+[![Release](https://img.shields.io/badge/Release-v2.0-orange.svg)](https://github.com/Bader287/netsuite/releases/tag/v2.0)
 [![Website](https://img.shields.io/badge/Live_Site-Vercel-black.svg)](https://netsuite-one.vercel.app)
 
-> **A dual-engine desktop utility suite engineered for users constrained by ISP Fair Usage Policies (FUP), bandwidth throttles, and single-network Wi-Fi limits.**
+> **All-in-One Multi-Wi-Fi Aggregator & Bandwidth FUP Guardian.**  
+> Track per-Wi-Fi data spend, prevent ISP FUP slowdowns, bond multiple network adapters into one strong connection, and freeze heavy background apps with zero progress loss.
 
 🌐 **Live Download Website:** [https://netsuite-one.vercel.app](https://netsuite-one.vercel.app)
 
 ---
 
-## 🚀 The Dual-Engine Architecture
+## 🚀 Unified Architecture
 
-NetSuite combines two dedicated applications designed to give you total control over your Internet connectivity:
+NetFusion Max merges **NetGuardian** and **NetFusion** into a unified, dark-mode command center:
 
 ```
-                  ┌────────────────────────────────────────┐
-                  │            NETSUITE v1.0               │
-                  └──────────────────┬─────────────────────┘
-                                     │
-            ┌────────────────────────┴────────────────────────┐
-            ▼                                                 ▼
-┌───────────────────────────────┐         ┌─────────────────────────────────┐
-│     🛡️ NetGuardian App         │         │     🎛️ NetFusion Studio         │
-├───────────────────────────────┤         ├─────────────────────────────────┤
-│ • Daily Bandwidth / FUP Quota │         │ • Multi-Wi-Fi Aggregator        │
-│ • Per-App Wi-Fi Usage Audit   │         │ • Boost Mode (Bonding + Failover│
-│ • Kernel-Level Auto-Pause     │         │ • Control Mode (Policy Routing) │
-│ • Midnight Auto-Rollover      │         │ • 1-Click System Proxy Dispatch │
-└───────────────────────────────┘         └─────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│                   ⚡ NETFUSION MAX (v2.0 UNIFIED)                      │
+├────────────────────────────────────────────────────────────────────────┤
+│ 📡 Multi-Wi-Fi & FUP Monitor │ 🚀 Channel Bonding │ 📊 Per-App Audit   │
+├──────────────────────────────┼────────────────────┼────────────────────┤
+│ • Per-Adapter Data Spent (GB)│ • Boost Mode (RR)  │ • Per-App Usage MB │
+│ • Dual Progress (Cap & FUP)  │ • Control Mode     │ • Interface Used   │
+│ • Live Upload / Download Spd │ • 1-Click Proxy    │ • Kernel Freezing  │
+│ • Latency / Health Watchdog  │ • Auto-Failover    │ • Auto-Pause Rules │
+└──────────────────────────────┴────────────────────┴────────────────────┘
 ```
 
 ---
 
-## 🛡️ Engine 1: NetGuardian
+## ✨ Key Features
 
-Designed for capped ISP connections (e.g. 28 GB daily quota with 20 GB FUP slowdown thresholds).
+1. **📡 Individual Per-Wi-Fi FUP & Quota Tracking**
+   - Independent dual progress bars for each detected Wi-Fi adapter or mobile hotspot.
+   - Live speed (KB/s or MB/s), daily usage, and ping latency per adapter.
+   - Customizable daily caps and FUP warning thresholds for every connection.
 
-- **Custom Quota & FUP Limits:** Visual dual-progress bars tracking normal quota and throttle threshold.
-- **Kernel-Level Process Suspend/Resume:** Automatically freezes heavy background downloaders (Steam, Epic Games, Riot Client, Battle.net, Torrent clients) *without killing them or losing download progress*.
-- **Per-App Wi-Fi Audit:** Real-time table displaying exact Megabytes consumed per background process.
-- **Flicker-Free UI:** High-performance in-place numeric rendering with zero UI jitter.
-- **Midnight Auto-Reset:** Data counters seamlessly reset daily at 00:00:00 local time.
+2. **🚀 Multi-Wi-Fi Bonding & Traffic Steering**
+   - **Boost Mode (Channel Bonding):** Merges available Wi-Fi streams round-robin for combined throughput and seamless failover.
+   - **Control Mode (Traffic Steering):** Steers heavy downloads to Wi-Fi 1, while dedicating low-latency Wi-Fi 2 to Discord, Zoom, and Games.
+   - **1-Click System Proxy:** Routes all Windows network traffic through the bonded engine with instant WinINet broadcast notification.
 
----
-
-## 🎛️ Engine 2: NetFusion Studio
-
-Combines multiple network interfaces (e.g., Laptop Wi-Fi + Phone USB Tethering or USB Wi-Fi dongle) into a unified, high-speed connection.
-
-- **⚡ Boost Mode (Channel Bonding):**
-  - Distributes outgoing TCP/HTTP requests round-robin across all active network adapters.
-  - Multiplies download throughput and provides **automatic failover** if one Wi-Fi drops.
-- **🎛️ Control Mode (Granular Traffic Steering):**
-  - Dedicates specific network adapters to specific types of traffic (e.g., Interface 1 for heavy downloads, Interface 2 exclusively for low-latency Discord/Zoom/Gaming).
-- **TCP_NODELAY Real-Time Engine:**
-  - 64 KB optimized stream buffers with Nagle's algorithm disabled to eliminate packet latency.
-- **1-Click System Proxy Integration:**
-  - Automatically configures Windows system proxy (WinINet broadcast) so all browsers and apps route through the aggregator instantly without requiring a restart.
+3. **📊 Per-App Network Audit & Safe Freezing**
+   - Live table of running network processes showing data consumed today and which adapter they use.
+   - Non-destructive kernel suspension (`psutil.Process.suspend()`) to freeze heavy apps (Steam, Epic, Riot, Torrents) with zero download progress loss.
+   - Automatic freeze trigger when approaching FUP slowdown limits.
 
 ---
 
@@ -66,54 +54,34 @@ Combines multiple network interfaces (e.g., Laptop Wi-Fi + Phone USB Tethering o
 
 | Platform | Format | Link |
 | :--- | :--- | :--- |
-| **Windows 10 / 11** | Standalone Executables (`.exe`) | [Download Windows Binaries (v1.0)](https://github.com/Bader287/netsuite/releases/latest/download/NetSuite_Windows_Binaries.zip) |
-| **macOS & Linux** | Python Source Package | [Download Cross-Platform Package](https://bader287.github.io/netsuite/downloads/NetGuardian_Suite_v1.0.zip) |
+| **Windows 10 / 11** | Standalone Executable (`.exe`) | [Download NetFusionMax Windows v2.0](https://github.com/Bader287/netsuite/releases/download/v2.0/NetFusionMax_Windows_v2.0.zip) |
+| **macOS & Linux** | Python Cross-Platform Source | [Download Cross-Platform Package](https://netsuite-one.vercel.app/downloads/NetFusionMax_CrossPlatform_v2.0.zip) |
 
 ---
 
 ## 💻 Quick Start Guide
 
-### 🪟 Windows (Pre-compiled Executables)
-1. Download `NetSuite_Windows_Binaries.zip` from [Releases](https://github.com/Bader287/netsuite/releases/latest).
-2. Extract the archive.
-3. Run `NetGuardian.exe` or `NetFusion.exe` directly (no Python or dependencies required).
+### 🪟 Windows (Pre-compiled Executable)
+1. Download `NetFusionMax_Windows_v2.0.zip`.
+2. Extract and run **`NetFusionMax.exe`** directly (no Python or dependencies required).
 
-### 🍎 macOS
+### 🍎 macOS / 🐧 Linux
 ```bash
-# Extract the source package
-unzip NetGuardian_Suite_v1.0.zip
-cd NetGuardian_Suite_v1.0
-
-# Install dependencies
-pip3 install psutil customtkinter
-
-# Run
-python3 net_guardian_app.py
-# or
-python3 net_fusion_app.py
-```
-
-### 🐧 Linux (Ubuntu / Debian / Arch)
-```bash
-sudo apt update && sudo apt install python3-tk python3-pip
+unzip NetFusionMax_CrossPlatform_v2.0.zip
 pip install psutil customtkinter
-
-# Run
-python3 net_guardian_app.py
-# or
-python3 net_fusion_app.py
+python3 netfusion_max_app.py
 ```
 
 ---
 
-## 🔒 Security & Privacy
+## 🔒 Full Security & Privacy Guarantee
 
-- **100% Local Execution:** No telemetry, no cloud relays, no tracking. All proxy and monitoring operations run entirely on `127.0.0.1`.
-- **Closed Source Windows Distribution:** Pre-compiled PyInstaller executables protect internal business logic for client-facing distributions.
-- **Non-Destructive Freezing:** NetGuardian uses native OS kernel suspension (`psutil.Process.suspend()`) rather than terminating processes, ensuring safe resumption without corrupting game downloads.
+- **100% Offline-First:** Runs exclusively on `127.0.0.1`. No telemetry, external servers, or tracking.
+- **Code Protected:** Distributed as pre-compiled standalone binary on Windows so end users cannot view or alter internal source code.
+- **Atomic State Persistence:** All data writes use atomic file replacement to prevent data corruption during sudden shutdowns.
 
 ---
 
 ## 📄 License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.

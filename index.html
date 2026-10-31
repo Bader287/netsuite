@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NetGuardian & NetFusion Suite | Bandwidth, FUP & Multi-Wi-Fi Aggregator</title>
-  <meta name="description" content="Cross-platform network tools to monitor ISP FUP limits, prevent Wi-Fi slowdowns, and bond multiple Wi-Fi connections into one strong connection.">
+  <title>NetFusion Max | All-in-One Multi-Wi-Fi Aggregator & Bandwidth Guardian</title>
+  <meta name="description" content="All-in-one desktop network utility: track per-Wi-Fi bandwidth spend and FUP slowdown limits, bond multiple Wi-Fi connections, and freeze heavy apps safely.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,14 +14,14 @@
     <div class="container">
       <nav>
         <a href="#" class="logo">
-          ⚡ <span>NetSuite</span>
+          ⚡ <span>NetFusion Max</span>
         </a>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
-          <li><a href="#guardian">NetGuardian</a></li>
-          <li><a href="#fusion">NetFusion</a></li>
+          <li><a href="#per-wifi">Per-Wi-Fi Tracking</a></li>
+          <li><a href="#bonding">Bonding Engine</a></li>
           <li><a href="#setup">Setup Guide</a></li>
-          <li><a href="downloads/NetGuardian_Suite_v1.0.zip" class="btn-nav">Download v1.0</a></li>
+          <li><a href="https://github.com/Bader287/netsuite/releases/download/v2.0/NetFusionMax_Windows_v2.0.zip" class="btn-nav">Download v2.0</a></li>
         </ul>
       </nav>
     </div>
@@ -30,22 +30,22 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="hero-pill">⚡ Version 1.0 Live Release &bull; Windows, macOS, Linux</div>
-      <h1>Master Your Quota.<br><span class="gradient-text">Bond Your Wi-Fi Connections.</span></h1>
-      <p>A dual-engine desktop suite designed for users trapped by ISP Fair Usage Policies (FUP) and single-network bandwidth constraints.</p>
+      <div class="hero-pill">⚡ Version 2.0 Unified Release &bull; All-in-One Command Center</div>
+      <h1>Track Every Wi-Fi.<br><span class="gradient-text">Bond Them Into One Strong Connection.</span></h1>
+      <p>The unified desktop suite combining real-time per-Wi-Fi FUP tracking, multi-socket channel bonding, policy routing, and kernel-level process freezing.</p>
       
       <div class="hero-actions">
-        <a id="windows-download" href="https://github.com/Bader287/netsuite/releases/latest/download/NetSuite_Windows_Binaries.zip" class="btn-primary" download>
+        <a id="windows-download" href="https://github.com/Bader287/netsuite/releases/download/v2.0/NetFusionMax_Windows_v2.0.zip" class="btn-primary" download>
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Download Windows App (.EXE)
         </a>
-        <a href="downloads/NetGuardian_Suite_v1.0.zip" class="btn-secondary" download>
+        <a href="downloads/NetFusionMax_CrossPlatform_v2.0.zip" class="btn-secondary" download>
           macOS & Linux Package
         </a>
       </div>
 
       <div class="os-compatibility">
-        Supported Platforms: Windows 10/11 (One-click) &bull; macOS Sonoma/Ventura &bull; Ubuntu/Debian/Arch Linux
+        Supported Platforms: Windows 10/11 (1-Click Standalone) &bull; macOS Sonoma/Ventura &bull; Ubuntu/Debian/Arch Linux
       </div>
     </div>
   </section>
@@ -54,66 +54,62 @@
   <section class="showcase" id="features">
     <div class="container">
       <div class="section-title">
-        <h2>Two Dedicated Engines. One Total Solution.</h2>
-        <p>Pick the exact tool tailored to your connection goals or run both side-by-side.</p>
+        <h2>Everything Merged Into One Unified App</h2>
+        <p>No need to run separate utilities. NetFusion Max unites quota monitoring and multi-connection bonding in a single pane.</p>
       </div>
 
       <div class="apps-grid">
         
-        <!-- NetGuardian Card -->
-        <div class="app-card" id="guardian">
-          <div class="app-badge badge-guardian">QUOTA GUARDIAN & AUTO-PAUSE</div>
-          <h3>NetGuardian</h3>
-          <p>Protect your connection from severe ISP throttling. Monitors daily limits, audits per-app Wi-Fi consumption, and automatically pauses background downloads before the slow zone hits.</p>
+        <!-- Per-Wi-Fi Tracking Card -->
+        <div class="app-card" id="per-wifi">
+          <div class="app-badge badge-guardian">📡 PER-WI-FI FUP & QUOTA TRACKER</div>
+          <h3>Individual Network Card Auditing</h3>
+          <p>See exactly how much bandwidth you spend on each individual Wi-Fi adapter or mobile hotspot, with independent FUP threshold alerts.</p>
           
           <ul class="features-list">
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>Custom Quotas:</strong> Set customizable daily caps (e.g. 28 GB) and FUP warning points (e.g. 20 GB).</span>
+              <span><strong>Per-Adapter Progress Bars:</strong> Dual gauges for Daily Cap (e.g. 28 GB) and FUP warning zone (e.g. 20 GB) for each card.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>Kernel-Level Auto-Pause:</strong> Freezes Steam, Epic Games, Riot Client, and Torrents safely in memory with 0 lost progress.</span>
+              <span><strong>Live Multi-Link Speeds:</strong> Independent real-time upload/download metrics and ping watchdog per connection.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>Per-App Wi-Fi Audit:</strong> Live table showing every background process and exact megabytes consumed today.</span>
+              <span><strong>Kernel-Level Auto-Pause:</strong> Freezes Steam, Epic Games, Riot, and Torrents automatically when any Wi-Fi nears its FUP limit.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>Zero-Flicker Live Dashboard:</strong> In-place smooth numeric updates with midnight auto-rollover.</span>
+              <span><strong>Midnight Auto-Reset:</strong> Smooth daily rollover at midnight with atomic zero-loss state saving.</span>
             </li>
           </ul>
-
-          <a href="downloads/NetGuardian_Suite_v1.0.zip" class="btn-secondary" style="margin-top: auto; text-align: center;">Get NetGuardian</a>
         </div>
 
-        <!-- NetFusion Card -->
-        <div class="app-card" id="fusion">
-          <div class="app-badge badge-fusion">CHANNEL BONDING & FAILOVER</div>
-          <h3>NetFusion Studio</h3>
-          <p>Merge multiple Wi-Fi signals (e.g. built-in Wi-Fi + phone USB tethering or USB Wi-Fi) into one combined network with dual operational modes.</p>
+        <!-- Bonding & Traffic Steering Card -->
+        <div class="app-card" id="bonding">
+          <div class="app-badge badge-fusion">🚀 MULTI-WI-FI BONDING & STEERING</div>
+          <h3>Socket Bonding & Automatic Failover</h3>
+          <p>Combine your primary Wi-Fi with phone USB tethering or a USB Wi-Fi dongle for maximum speed and rock-solid connection reliability.</p>
           
           <ul class="features-list">
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>⚡ Boost Mode:</strong> Combines available Wi-Fi streams to maximize throughput and deliver seamless failover.</span>
+              <span><strong>⚡ Boost Mode:</strong> Round-robin channel bonding across all active adapters to maximize throughput with zero drops.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>🎛️ Control Mode:</strong> Steers bulk downloads to Wi-Fi 1 while dedicating low-latency Wi-Fi 2 exclusively to Discord, Zoom, and Games.</span>
+              <span><strong>🎛️ Control Mode:</strong> Steer bulk downloads to Wi-Fi 1, while dedicating low-latency Wi-Fi 2 exclusively to Discord, Zoom, and Games.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>TCP_NODELAY Real-Time Engine:</strong> Eliminates packet buffering delay for zero-latency interactive voice and gaming.</span>
+              <span><strong>TCP_NODELAY Real-Time Engine:</strong> Zero-latency interactive voice, video calls, and responsive gaming.</span>
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-              <span><strong>1-Click System Proxy:</strong> Instant WinINet broadcast routing without restarting your web browser.</span>
+              <span><strong>1-Click System Proxy:</strong> Instant OS-level WinINet broadcast routing without restarting your web browser.</span>
             </li>
           </ul>
-
-          <a href="downloads/NetGuardian_Suite_v1.0.zip" class="btn-secondary" style="margin-top: auto; text-align: center;">Get NetFusion</a>
         </div>
 
       </div>
@@ -132,27 +128,27 @@
         
         <!-- Windows -->
         <div class="setup-card">
-          <h4>🪟 Windows 10 / 11</h4>
+          <h4>🪟 Windows 10 / 11 (Standalone)</h4>
           <ol>
-            <li>Download and extract <code>NetGuardian_Suite_v1.0.zip</code>.</li>
-            <li>Double-click <code>INSTALL_DESKTOP_SHORTCUT.bat</code>.</li>
-            <li>Launch <strong>NetGuardian</strong> or <strong>NetFusion</strong> directly from your Desktop icons!</li>
+            <li>Download <code>NetFusionMax_Windows_v2.0.zip</code>.</li>
+            <li>Extract and double-click <strong>NetFusionMax.exe</strong>.</li>
+            <li>Runs immediately — no Python or installation required!</li>
           </ol>
-          <div class="code-box">INSTALL_DESKTOP_SHORTCUT.bat</div>
+          <div class="code-box">NetFusionMax.exe</div>
         </div>
 
         <!-- macOS -->
         <div class="setup-card">
           <h4>🍎 macOS (Apple Silicon / Intel)</h4>
           <ol>
-            <li>Extract the ZIP and open Terminal in the folder.</li>
+            <li>Extract the cross-platform package.</li>
             <li>Install dependencies (Python 3.8+):</li>
           </ol>
           <div class="code-box">pip3 install psutil customtkinter</div>
           <ol start="3">
-            <li>Launch NetGuardian or NetFusion:</li>
+            <li>Launch NetFusion Max:</li>
           </ol>
-          <div class="code-box">python3 net_guardian_app.py</div>
+          <div class="code-box">python3 netfusion_max_app.py</div>
         </div>
 
         <!-- Linux -->
@@ -169,7 +165,7 @@
           <ol start="3">
             <li>Launch:</li>
           </ol>
-          <div class="code-box">python3 net_fusion_app.py</div>
+          <div class="code-box">python3 netfusion_max_app.py</div>
         </div>
 
       </div>
@@ -179,7 +175,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 NetSuite Development Group &bull; Open Source, Zero-Ad, Privacy-Preserving Network Utilities.</p>
+      <p>&copy; 2026 NetFusion Max Group &bull; Open Source, Zero-Ad, Privacy-Preserving Network Utilities.</p>
     </div>
   </footer>
 
